@@ -1,8 +1,8 @@
 <?php
 
-namespace Phoenix\Rest\Interfaces;
+namespace PHPNomad\Rest\Interfaces;
 
-use Phoenix\Rest\Exceptions\ValidationException;
+use PHPNomad\Rest\Exceptions\ValidationException;
 
 interface Validation
 {

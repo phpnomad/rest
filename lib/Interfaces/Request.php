@@ -1,6 +1,6 @@
 <?php
 
-namespace Phoenix\Rest\Interfaces;
+namespace PHPNomad\Rest\Interfaces;
 
 interface Request
 {

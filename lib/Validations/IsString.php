@@ -1,9 +1,9 @@
 <?php
 
-namespace Phoenix\Rest\Validations;
+namespace PHPNomad\Rest\Validations;
 
-use Phoenix\Rest\Interfaces\Request;
-use Phoenix\Rest\Interfaces\Validation;
+use PHPNomad\Rest\Interfaces\Request;
+use PHPNomad\Rest\Interfaces\Validation;
 
 class IsString implements Validation
 {

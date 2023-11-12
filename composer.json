@@ -12,6 +12,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/phpnomad/tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/phpnomad/enum-polyfill.git"
         }
     ],
     "autoload": {
@@ -30,6 +34,9 @@
             "email": "alex@standiford.us"
         }
     ],
+    "require": {
+        "phpnomad/enum": "dev-main"
+    },
     "require-dev": {
         "phpnomad/tests": "^0.1.0"
     },

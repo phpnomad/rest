@@ -35,7 +35,7 @@
         }
     ],
     "require": {
-        "phpnomad/enum": "dev-main"
+        "phpnomad/enum-polyfill": "dev-main"
     },
     "require-dev": {
         "phpnomad/tests": "^0.1.0"

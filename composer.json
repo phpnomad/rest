@@ -15,6 +15,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/phpnomad/cache.git"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/phpnomad/enum-polyfill.git"
         }
     ],
@@ -35,7 +39,8 @@
         }
     ],
     "require": {
-        "phpnomad/enum-polyfill": "dev-main"
+        "phpnomad/enum-polyfill": "dev-main",
+        "phpnomad/cache": "dev-main"
     },
     "require-dev": {
         "phpnomad/tests": "^0.1.0"

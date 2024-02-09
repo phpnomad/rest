@@ -36,6 +36,14 @@ interface Request
     public function getParam(string $name);
 
     /**
+     * Returns true if the param is set on the request, otherwise false.
+     *
+     * @param string $name
+     * @return bool
+     */
+    public function hasParam(string $name): bool;
+
+    /**
      * Set a specific request parameter.
      *
      * @param string $name Parameter name.

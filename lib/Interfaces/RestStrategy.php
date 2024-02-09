@@ -2,8 +2,6 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
-use PHPNomad\Rest\Enums\Method;
-
 interface RestStrategy
 {
     /**

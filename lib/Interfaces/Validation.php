@@ -2,8 +2,6 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
-use PHPNomad\Rest\Exceptions\ValidationException;
-
 interface Validation
 {
     /**
@@ -13,7 +11,17 @@ interface Validation
      * @param Request $request
      *
      * @return bool Whether the request is valid according to this validator.
-     * @throws ValidationException If the validation fails.
      */
     public function isValid(string $key, Request $request): bool;
+
+    /**
+     * Returns the error message associated with this validation.
+     *
+     * @return string The error message.
+     */
+    public function getErrorMessage(string $key, Request $request): string;
+
+    public function getContext(): array;
+
+    public function getType(): string;
 }

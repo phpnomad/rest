@@ -10,5 +10,5 @@ interface Middleware
      * @param Request $request
      * @return void
      */
-    public function process(Request &$request): void;
+    public function process(Request $request): void;
 }

@@ -2,7 +2,9 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
-interface Request
+use PHPNomad\Auth\Interfaces\HasUser;
+
+interface Request extends HasUser
 {
     /**
      * Get a specific header value.
@@ -57,11 +59,4 @@ interface Request
      * @return array<string, mixed> An associative array of parameter names to values.
      */
     public function getParams(): array;
-
-    /**
-     * Get the request object.
-     *
-     * @return object
-     */
-    public function getRequest(): object;
 }

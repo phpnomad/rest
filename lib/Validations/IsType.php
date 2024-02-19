@@ -32,13 +32,14 @@ class IsType implements Validation
     protected function getDefaultErrorMessage(string $key, Request $request): string
     {
         $param = $request->getParam($key);
+        $type = $this->type;
 
         //TODO: Translate this.
         if(null === $param){
-            return "$key must be a string, but no value was given";
+            return "$key must be a $type, but no value was given";
         }
 
-        return "$key must be a string, was given " . gettype($param);
+        return "$key must be a $type, was given " . gettype($param);
     }
 
     public function getContext(): array

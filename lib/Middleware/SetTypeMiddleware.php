@@ -23,7 +23,9 @@ class SetTypeMiddleware implements Middleware
 
     public function process(Request $request): void
     {
-        if ($param = $request->getParam($this->field)) {
+        $param = $request->getParam($this->field);
+
+        if ($param !== null) {
             settype($param, $this->type);
             $request->setParam($this->field, $param);
         }

@@ -26,7 +26,25 @@ class IsType implements Validation
     /** @inheritDoc */
     public function isValid(string $key, Request $request): bool
     {
-        return gettype($request->getParam($key)) === $this->type;
+        $value = $request->getParam($key);
+        switch ($this->type) {
+            case BasicTypes::Boolean:
+                return filter_var($value, FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE) !== null;
+            case BasicTypes::Integer:
+                return is_numeric($value) && strpos($value, '.') === false;
+            case BasicTypes::Float:
+                return is_numeric($value) && strpos($value, '.') !== false;
+            case BasicTypes::String:
+                return true;
+            case BasicTypes::Array:
+                return is_array(json_decode($value, true));
+            case BasicTypes::Object:
+                return is_object(json_decode($value));
+            case BasicTypes::Null:
+                return empty($value);
+            default:
+                return false;
+        }
     }
 
     protected function getDefaultErrorMessage(string $key, Request $request): string
@@ -39,7 +57,7 @@ class IsType implements Validation
             return "$key must be a $type, but no value was given";
         }
 
-        return "$key must be a $type, was given " . gettype($param);
+        return "$key must be a $type, was given " . $param;
     }
 
     public function getContext(): array

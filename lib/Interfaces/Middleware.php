@@ -2,6 +2,8 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
+use PHPNomad\Rest\Exceptions\RestException;
+
 interface Middleware
 {
     /**
@@ -9,6 +11,7 @@ interface Middleware
      *
      * @param Request $request
      * @return void
+     * @throws RestException
      */
     public function process(Request $request): void;
 }

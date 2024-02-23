@@ -14,7 +14,5 @@ class BasicTypes
     public const String = "string";
     public const Array = "array";
     public const Object = "object";
-    public const Resource = "resource";
     public const Null = "null";
-    public const UnknownType = "unknown type";
 }

@@ -30,13 +30,13 @@ class IsAny implements Validation
     protected function getDefaultErrorMessage(string $key, Request $request): string
     {
         $param = $request->getParam($key);
-        $enumeration = Str::enumerate($this->validItems, 'or');
+        $enumeration = Str::enumerate($this->validItems, 'or', 'either');
         //TODO: Translate this.
         if(null === $param){
-            return "$key must be either $enumeration, but no value was given";
+            return "$key must be $enumeration, but no value was given";
         }
 
-        return "$key must be either $enumeration, but was given $param";
+        return "$key must be $enumeration, but was given $param";
     }
 
     public function getContext(): array

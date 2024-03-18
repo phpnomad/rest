@@ -45,7 +45,8 @@
     "require": {
         "phpnomad/enum-polyfill": "dev-main",
         "phpnomad/auth": "dev-main",
-        "phpnomad/cache": "dev-main"
+        "phpnomad/cache": "dev-main",
+        "phpnomad/event": "dev-main"
     },
     "require-dev": {
         "phpnomad/tests": "^0.1.0"

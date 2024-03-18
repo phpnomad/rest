@@ -17,6 +17,6 @@ class ValidationException extends RestException
      */
     public function __construct(string $message, array $failures, int $code = 400)
     {
-        parent::__construct($message,['type' => 'VALIDATION_FAILED', 'failedValidations' => $failures], $code);
+        parent::__construct($message, ['type' => 'VALIDATION_FAILED', 'failedValidations' => $failures], $code);
     }
 }

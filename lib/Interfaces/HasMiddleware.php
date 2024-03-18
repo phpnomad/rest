@@ -11,5 +11,5 @@ interface HasMiddleware
      * @return Middleware[]
      * @throws RestException
      */
-    public function getMiddleware(): array;
+    public function getMiddleware(Request $request): array;
 }

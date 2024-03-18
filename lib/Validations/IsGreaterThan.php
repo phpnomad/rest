@@ -13,6 +13,7 @@ class IsGreaterThan implements Validation
     {
         $this->value = $value;
     }
+
     public function isValid(string $key, Request $request): bool
     {
         return $request->getParam($key) > $this->value;
@@ -20,8 +21,12 @@ class IsGreaterThan implements Validation
 
     public function getErrorMessage(string $key, Request $request): string
     {
-        $amount = $request->getParam($key);
-        return "$key must be greater than $amount. Was given " . $this->value;
+        if($request->hasParam($key)){
+            $amount = $request->getParam($key);
+            return "$key must be greater than $this->value. Was given " . $amount;
+        }
+
+        return "$key must be greater than $this->value, but no value was given.";
     }
 
     public function getContext(): array

@@ -32,7 +32,7 @@ interface Request extends HasUser
     /**
      * Get a specific request parameter.
      *
-     * @param string $name Parameter name.Can be dot notated to get sub items in the param.
+     * @param string $name Parameter name. Can be dot notated to get sub items in the param.
      * @return mixed|null Parameter value or null if the parameter doesn't exist.
      */
     public function getParam(string $name);

@@ -38,6 +38,20 @@ interface Response
     public function setJson($data);
 
     /**
+     * Gets the body content as JSON.
+     *
+     * @return array
+     */
+    public function getJson(): array;
+
+    /**
+     * Gets the body as a string.
+     *
+     * @return string
+     */
+    public function getBody(): string;
+
+    /**
      * Set an error message as the body content.
      *
      * @param string $message Error message.

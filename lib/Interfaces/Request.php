@@ -54,6 +54,14 @@ interface Request extends HasUser
     public function setParam(string $name, $value): void;
 
     /**
+     * Removes a specific request parameter.
+     *
+     * @param string $name
+     * @return void
+     */
+    public function removeParam(string $name): void;
+
+    /**
      * Get all request parameters.
      *
      * @return array<string, mixed> An associative array of parameter names to values.

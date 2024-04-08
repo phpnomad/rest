@@ -37,9 +37,9 @@ class IsType implements Validation
             case BasicTypes::String:
                 return true;
             case BasicTypes::Array:
-                return is_array(json_decode($value, true));
+                return is_array($value);
             case BasicTypes::Object:
-                return is_object(json_decode($value));
+                return is_object($value);
             case BasicTypes::Null:
                 return empty($value);
             default:

@@ -55,6 +55,10 @@ class AuthorizationMiddleware implements Middleware
 
     public function process(Request $request): void
     {
+        if(!$request->getUser()){
+            throw new AuthorizationException($this->errorMessage ?? "You don't have permission to do that.");
+        }
+
         if (!$this->evaluatePolicies($this->getPolicies(), $request->getUser(), $this->buildSession())) {
             throw new AuthorizationException($this->errorMessage ?? "You don't have permission to do that.");
         }

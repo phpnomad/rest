@@ -13,6 +13,13 @@ interface Response
     public function setStatus(int $code);
 
     /**
+     * Gets the HTTP status for the response
+     *
+     * @return int
+     */
+    public function getStatus(): int;
+
+    /**
      * Add a header to the response.
      *
      * @param string $name Header name.
@@ -20,6 +27,12 @@ interface Response
      * @return Response
      */
     public function setHeader(string $name, string $value);
+
+    /**
+     * @param string $name
+     * @return mixed
+     */
+    public function getHeader(string $name);
 
     /**
      * Set the body content of the response.
@@ -59,6 +72,11 @@ interface Response
      * @return Response
      */
     public function setError(string $message, int $code = 400);
+
+    /**
+     * @return ?string
+     */
+    public function getErrorMessage(): ?string;
 
     /**
      * Gets the response object.

@@ -4,6 +4,8 @@ namespace PHPNomad\Rest\Interfaces;
 
 use PHPNomad\Auth\Interfaces\HasUser;
 
+
+
 interface Request extends HasUser
 {
     /**

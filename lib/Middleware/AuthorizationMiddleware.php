@@ -8,32 +8,31 @@ use PHPNomad\Auth\Models\Action;
 use PHPNomad\Auth\Models\Policies\SessionTypePolicy;
 use PHPNomad\Auth\Models\Policies\UserCanDoActionPolicy;
 use PHPNomad\Auth\Models\Session;
-use PHPNomad\Auth\Traits\CanEvaluateAuthorizationPolicies;
+use PHPNomad\Auth\Services\AuthPolicyEvaluatorService;
 use PHPNomad\Rest\Exceptions\AuthorizationException;
 use PHPNomad\Rest\Interfaces\Middleware;
 use PHPNomad\Rest\Interfaces\Request;
 
 class AuthorizationMiddleware implements Middleware
 {
-    use CanEvaluateAuthorizationPolicies;
 
     protected array $policies;
     protected ?string $errorMessage;
-    protected array $targetIdentifier;
-    protected string $targetType;
     protected Action $action;
     protected string $context;
+    protected AuthPolicyEvaluatorService $authPolicyEvaluatorService;
 
     /**
      * Initializes a new instance of the class.
      *
-     * @param SessionContexts::* $context The context for the instance.
+     * @param string $context The context for the instance.
      * @param Action $action The action object for the instance.
      * @param array $policies The array of policies for the instance. Leave empty for no auth.
      * @param string|null $errorMessage The optional error message for the instance. Defaults to null.
      */
-    public function __construct(string $context, Action $action, array $policies = [], ?string $errorMessage = null)
+    public function __construct(AuthPolicyEvaluatorService $authPolicyEvaluatorService, string $context, Action $action, array $policies = [], ?string $errorMessage = null)
     {
+        $this->authPolicyEvaluatorService = $authPolicyEvaluatorService;
         $this->policies = $policies;
         $this->errorMessage = $errorMessage;
         $this->action = $action;
@@ -59,7 +58,7 @@ class AuthorizationMiddleware implements Middleware
             throw new AuthorizationException($this->errorMessage ?? "You don't have permission to do that.");
         }
 
-        if (!$this->evaluatePolicies($this->getPolicies(), $request->getUser(), $this->buildSession())) {
+        if (!$this->authPolicyEvaluatorService->evaluatePolicies($this->getPolicies(), $request->getUser(), $this->buildSession())) {
             throw new AuthorizationException($this->errorMessage ?? "You don't have permission to do that.");
         }
     }

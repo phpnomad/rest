@@ -35,6 +35,12 @@ interface Response
     public function getHeader(string $name);
 
     /**
+     * @param array $headers
+     * @return array
+     */
+    public function getHeaders(): array;
+
+    /**
      * Set the body content of the response.
      *
      * @param string $body The body content.

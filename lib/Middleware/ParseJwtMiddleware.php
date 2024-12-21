@@ -6,7 +6,7 @@ use PHPNomad\Auth\Exceptions\JwtException;
 use PHPNomad\Auth\Services\JwtService;
 use PHPNomad\Rest\Exceptions\RestException;
 use PHPNomad\Rest\Interfaces\Middleware;
-use PHPNomad\Rest\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Request;
 
 class ParseJwtMiddleware implements Middleware
 {

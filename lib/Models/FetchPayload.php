@@ -2,6 +2,8 @@
 
 namespace PHPNomad\Rest\Models;
 
+use PHPNomad\Http\Enums\Method;
+
 class FetchPayload
 {
     protected string $url;

@@ -3,6 +3,8 @@
 namespace PHPNomad\Rest\Interfaces;
 
 use PHPNomad\Rest\Exceptions\RestException;
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
 
 interface Interceptor
 {

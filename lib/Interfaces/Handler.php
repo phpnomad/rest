@@ -2,6 +2,9 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
+
 interface Handler
 {
     /**

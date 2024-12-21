@@ -2,7 +2,9 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
-use PHPNomad\Rest\Enums\Method;
+use PHPNomad\Http\Enums\Method;
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
 
 interface Controller
 {

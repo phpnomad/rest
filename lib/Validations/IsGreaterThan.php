@@ -2,8 +2,8 @@
 
 namespace PHPNomad\Rest\Validations;
 
-use PHPNomad\Rest\Interfaces\Request;
 use PHPNomad\Rest\Interfaces\Validation;
+use PHPNomad\Http\Interfaces\Request;
 
 class IsGreaterThan implements Validation
 {

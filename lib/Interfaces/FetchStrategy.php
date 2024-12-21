@@ -4,6 +4,7 @@ namespace PHPNomad\Rest\Interfaces;
 
 
 use PHPNomad\Rest\Models\FetchPayload;
+use PHPNomad\Http\Interfaces\Response;
 
 interface FetchStrategy{
 

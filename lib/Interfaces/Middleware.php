@@ -3,6 +3,7 @@
 namespace PHPNomad\Rest\Interfaces;
 
 use PHPNomad\Rest\Exceptions\RestException;
+use PHPNomad\Http\Interfaces\Request;
 
 interface Middleware
 {

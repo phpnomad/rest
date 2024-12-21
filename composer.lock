@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6e5e75299a6ca80b079b26779a9cf41",
+    "content-hash": "51926c6bddede67afe6fd9de157e3be5",
     "packages": [
         {
             "name": "phpnomad/auth",
@@ -267,12 +267,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpnomad/utils.git",
-                "reference": "bf47baea7ca6d5245f789fc93396d01f2ae5cc34"
+                "reference": "1bdcf8437fd1143737425c57c1b01dccd5ca0652"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpnomad/utils/zipball/bf47baea7ca6d5245f789fc93396d01f2ae5cc34",
-                "reference": "bf47baea7ca6d5245f789fc93396d01f2ae5cc34",
+                "url": "https://api.github.com/repos/phpnomad/utils/zipball/1bdcf8437fd1143737425c57c1b01dccd5ca0652",
+                "reference": "1bdcf8437fd1143737425c57c1b01dccd5ca0652",
                 "shasum": ""
             },
             "require-dev": {
@@ -299,7 +299,7 @@
                 "issues": "https://github.com/phpnomad/utils/issues",
                 "source": "https://github.com/phpnomad/utils/tree/1.0.0"
             },
-            "time": "2024-12-18T16:24:57+00:00"
+            "time": "2024-12-18T17:29:56+00:00"
         }
     ],
     "packages-dev": [
@@ -4849,10 +4849,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }

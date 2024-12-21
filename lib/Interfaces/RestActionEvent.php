@@ -4,6 +4,8 @@ namespace PHPNomad\Rest\Interfaces;
 
 use PHPNomad\Auth\Enums\ActionTypes;
 use PHPNomad\Events\Interfaces\Event;
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
 
 interface RestActionEvent extends Event
 {

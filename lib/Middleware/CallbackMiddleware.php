@@ -3,7 +3,7 @@
 namespace PHPNomad\Rest\Middleware;
 
 use PHPNomad\Rest\Interfaces\Middleware;
-use PHPNomad\Rest\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Request;
 
 class CallbackMiddleware implements Middleware
 {

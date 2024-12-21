@@ -60,9 +60,28 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-file-iterator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/friendsofphp/php-cs-fixer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/clue/ndjson-react" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/evenement/evenement" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/fidry/cpu-core-counter" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/enum-polyfill" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/event" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/logger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/singleton" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/tests" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/phpnomad/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/child-process" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/dns" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/event-loop" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/promise" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/socket" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/react/stream" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="http" />
+    <orderEntry type="module" module-name="fetch" />
   </component>
 </module>

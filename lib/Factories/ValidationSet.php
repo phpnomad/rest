@@ -4,9 +4,8 @@ namespace PHPNomad\Rest\Factories;
 
 use Closure;
 use PHPNomad\Cache\Traits\WithInstanceCache;
-use PHPNomad\Rest\Exceptions\ValidationException;
-use PHPNomad\Rest\Interfaces\Request;
 use PHPNomad\Rest\Interfaces\Validation;
+use PHPNomad\Http\Interfaces\Request;
 
 class ValidationSet
 {

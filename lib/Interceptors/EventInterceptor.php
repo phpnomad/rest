@@ -5,8 +5,8 @@ namespace PHPNomad\Rest\Interceptors;
 use PHPNomad\Events\Interfaces\Event;
 use PHPNomad\Events\Interfaces\EventStrategy;
 use PHPNomad\Rest\Interfaces\Interceptor;
-use PHPNomad\Rest\Interfaces\Request;
-use PHPNomad\Rest\Interfaces\Response;
+use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Response;
 
 class EventInterceptor implements Interceptor
 {

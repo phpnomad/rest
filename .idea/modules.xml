@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../fetch/.idea/fetch.iml" filepath="$PROJECT_DIR$/../fetch/.idea/fetch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../http/.idea/http.iml" filepath="$PROJECT_DIR$/../http/.idea/http.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/repository-template.iml" filepath="$PROJECT_DIR$/.idea/repository-template.iml" />
     </modules>
   </component>

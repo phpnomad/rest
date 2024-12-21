@@ -2,6 +2,8 @@
 
 namespace PHPNomad\Rest\Interfaces;
 
+use PHPNomad\Http\Interfaces\Response;
+
 interface WebController
 {
     /**

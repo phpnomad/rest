@@ -2,9 +2,7 @@
 
 namespace PHPNomad\Rest\Traits;
 
-namespace PHPNomad\Rest\Traits;
-
-use PHPNomad\Rest\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Request;
 
 trait WithProvidedErrorMessage
 {

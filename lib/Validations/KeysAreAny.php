@@ -2,10 +2,10 @@
 
 namespace PHPNomad\Rest\Validations;
 
-use PHPNomad\Rest\Interfaces\Request;
 use PHPNomad\Rest\Interfaces\Validation;
 use PHPNomad\Rest\Traits\WithProvidedErrorMessage;
 use PHPNomad\Utils\Helpers\Str;
+use PHPNomad\Http\Interfaces\Request;
 
 class KeysAreAny implements Validation
 {

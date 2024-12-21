@@ -6,8 +6,8 @@ use PHPNomad\Rest\Exceptions\ValidationException;
 use PHPNomad\Rest\Factories\ValidationSet;
 use PHPNomad\Rest\Interfaces\HasValidations;
 use PHPNomad\Rest\Interfaces\Middleware;
-use PHPNomad\Rest\Interfaces\Request;
 use PHPNomad\Utils\Helpers\Arr;
+use PHPNomad\Http\Interfaces\Request;
 
 class ValidationMiddleware implements Middleware, HasValidations
 {

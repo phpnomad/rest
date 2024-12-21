@@ -11,7 +11,7 @@ use PHPNomad\Auth\Models\Session;
 use PHPNomad\Auth\Services\AuthPolicyEvaluatorService;
 use PHPNomad\Rest\Exceptions\AuthorizationException;
 use PHPNomad\Rest\Interfaces\Middleware;
-use PHPNomad\Rest\Interfaces\Request;
+use PHPNomad\Http\Interfaces\Request;
 
 class AuthorizationMiddleware implements Middleware
 {

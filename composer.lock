@@ -180,16 +180,16 @@
         },
         {
             "name": "phpnomad/http",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpnomad/http.git",
-                "reference": "1c63d44e95b4f02d2b40194522b8502e911f7f40"
+                "reference": "523d2aeb79b78d924352cc5aef3bf8d74a639339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpnomad/http/zipball/1c63d44e95b4f02d2b40194522b8502e911f7f40",
-                "reference": "1c63d44e95b4f02d2b40194522b8502e911f7f40",
+                "url": "https://api.github.com/repos/phpnomad/http/zipball/523d2aeb79b78d924352cc5aef3bf8d74a639339",
+                "reference": "523d2aeb79b78d924352cc5aef3bf8d74a639339",
                 "shasum": ""
             },
             "require": {
@@ -219,9 +219,9 @@
             "homepage": "https://github.com/phpnomad/core",
             "support": {
                 "issues": "https://github.com/phpnomad/http/issues",
-                "source": "https://github.com/phpnomad/http/tree/1.0.1"
+                "source": "https://github.com/phpnomad/http/tree/1.0.2"
             },
-            "time": "2025-01-13T15:35:26+00:00"
+            "time": "2025-01-15T16:37:07+00:00"
         },
         {
             "name": "phpnomad/logger",

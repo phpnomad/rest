@@ -5,6 +5,7 @@ namespace PHPNomad\Rest\Validations;
 use PHPNomad\Rest\Interfaces\Validation;
 use PHPNomad\Rest\Traits\WithProvidedErrorMessage;
 use PHPNomad\Http\Interfaces\Request;
+use PHPNomad\Rest\Enums\BasicTypes;
 
 class IsType implements Validation
 {
